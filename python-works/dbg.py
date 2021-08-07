@@ -10,7 +10,7 @@ def calculate_sum(number_one,number_two):
 
 
 print("[+] Running the program")
-# pdb.set_trace()
+pdb.set_trace()
 print(calculate_sum(10,2))
 print("[+] Exiting the program")
 print("[*] DONE ")
