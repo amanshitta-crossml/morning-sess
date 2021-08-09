@@ -7,6 +7,7 @@ import unittest
 import pathlib as pl
 
 
+
 class TestCase(unittest.TestCase):
     """
     Unit test case for the final output
@@ -15,6 +16,7 @@ class TestCase(unittest.TestCase):
     def test_json_file(self):
         path = pl.Path('users.json')
         self.assertTrue(path.is_file())
+
 
 # print current time in Hour:Minutes:Seconds format
 print("Time is: ", datetime.now().time().strftime("%H:%M:%S"))
@@ -33,7 +35,8 @@ def display_usernames(users_dir):
     file_names = os.listdir(users_dir)
     for file_name in file_names:
         with open ("users/"+file_name) as f:
-            for user in f.readlines():
+            # for user in f.readlines():
+            for user in f.readline()
                 user_name = user.strip()
                 print(user_name)
                 all_users.append(user_name)
