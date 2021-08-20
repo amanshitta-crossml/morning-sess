@@ -90,5 +90,3 @@ print("\n[+] Done writing \n")
 # Runnning Test Cases
 print("[+] Test Case to Check if JSON created")
 unittest.main()
-
-
